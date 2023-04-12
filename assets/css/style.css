@@ -868,6 +868,7 @@ label {
 	z-index: 1;
 	padding: 120px 0 0;
 	overflow: hidden;
+	height: 100vh;
 }
 .banner-bg::before {
 	content: "";
@@ -1630,7 +1631,7 @@ label {
     padding: 10px 0px;
 	z-index: 2;
     background: #fff;
-    width: 60%;
+    width: 56.5%;
     color: #0f2f4f;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -2847,7 +2848,7 @@ label {
 .contact-info-wrap .row [class*="col-"]:last-child .contact-info-item::before {
 	display: none;
 }
-.contact-info-item .icon {
+.contact-info-item .icon a {
 	width: 107px;
 	height: 107px;
 	display: flex;
@@ -2892,17 +2893,23 @@ label {
 	font-weight: 500;
 	line-height: 30px;
 }
-.contact-info-wrap .row [class*="col-"]:nth-child(2) .icon {
+.contact-info-wrap .row [class*="col-"]:nth-child(2) .icon a{
 	color: #FF4581;
 }
-.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon {
+.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon a{
 	color: #00C4F4;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(4) .icon a {
+	color: #0dc237 !important;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(2) .icon-background::before {
 	border-color: #FF4581;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(3) .icon-background::before {
 	border-color: #00C4F4;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(4) .icon-background::before {
+	border-color: #0dc237;
 }
 .contact-form-wrap {
 	background-image: url(../img/bg/contact_bg.png);
@@ -3854,12 +3861,21 @@ label {
     transform: scale(0.9);
 }
 .circle_bg1 {
-	inset: -7rem 3rem 0rem 0;
+	inset: -9rem 3rem 0rem 0;
 	margin: auto;
+	max-height: 80%;
 }
 .circle_bg1 span {
     border-color: #5f93e0;
 }
  .circle_bg1 span:before {
     background: #6297e1;
+}
+.webworld img{
+	max-height: 80%;
+    max-width: 36% !important;
+}
+.webworld{
+	margin-top: 20px;
+    margin-right: 54px;
 }
