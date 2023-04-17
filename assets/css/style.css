@@ -1580,17 +1580,15 @@ label {
 	padding: 0 110px;
 }
 .chart-content-inner{
-	background: linear-gradient(0deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.6) 100%);
+	background: linear-gradient(360deg, #0B1D33 100%, rgba(11, 29, 51, 0) 56.51%);
     backdrop-filter: blur(3.5px);
     margin: 0px 60px;
     padding: 50px;
     border-radius: 40px;
 }
 .romino-img{
-	position: absolute;
-    top: 57px;
-    left: 10px;
     transform: rotate(15deg);
+	padding-top: 30px;
 }
 .chart-bg {
 	background-image: url(../img/bg/chart_bg.jpg);
@@ -1608,7 +1606,7 @@ label {
 	display: grid;
 }
 .nav-link {
-	color: #0f2f4f;
+	color: #ffff;
 }
 .chart-content .nav-tabs .nav-link {
 	margin-bottom: 0;
@@ -1617,7 +1615,7 @@ label {
 	border-radius: 0;
 	text-transform: uppercase;
 	font-size: 14px;
-	color: #0f2f4f;
+	color: #fff;
 	font-weight: 700;
 	padding: 0;
 	position: relative;
@@ -1630,9 +1628,9 @@ label {
 	position: relative;
     padding: 10px 0px;
 	z-index: 2;
-    background: #fff;
+    background: #030B15;
     width: 56.5%;
-    color: #0f2f4f;
+    color:#ffff;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
@@ -1659,7 +1657,7 @@ label {
 	line-height: 1.2;
 }
 .chart-content-inner p {
-	color: #0f2f4f;
+	color: #fff;
 	margin-bottom: 30px;
 }
 .chart-content-inner .btn {
@@ -3604,10 +3602,11 @@ label {
 
 .romino-img{
 	display: grid;
-    place-items: center;}
-.romino-img img{
-	height: 293px;
-    max-width: 342px;
+    place-items: center;
+}
+.romino-img img {
+    height: 285px;
+    max-width: 300px;
     margin-top: 30px;
 }
 	.romino-inner ul{
