@@ -2857,12 +2857,15 @@ label {
 	border-radius: 50%;
 	background: transparent;
 	font-size: 28px;
-	color: #FF9700;
+	color: #FFFF;
 	margin: 0 auto;
 	position: relative;
 	border: 1px solid rgba(255, 255, 255, 0.07);
 	z-index: 1;
 	margin-bottom: 10px;
+}
+.contact-info-item .icon a:hover {
+	color: #082154;
 }
 .contact-info-item .icon-background {
 	position: absolute;
@@ -2884,6 +2887,9 @@ label {
 	width: 83px;
 	height: 83px;
 	background: transparent;
+	border: 3px solid #FFFF;
+}
+.contact-info-item .icon-background::before:hover {
 	border: 3px solid #FF9700;
 }
 .contact-info-item .content p {
@@ -2894,22 +2900,41 @@ label {
 	line-height: 30px;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(2) .icon a{
-	color: #FF4581;
+	color: #FFFF;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(3) .icon a{
-	color: #00C4F4;
+	color: #FFFF;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(4) .icon a {
-	color: #0dc237 !important;
+	color: #FFFF;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(2) .icon-background::before {
-	border-color: #FF4581;
+	color: #FFFF;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(3) .icon-background::before {
-	border-color: #00C4F4;
+	color: #FFFF;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(4) .icon-background::before {
-	border-color: #0dc237;
+	color: #FFFF;
+}
+
+.contact-info-wrap .row [class*="col-"]:nth-child(2) .icon a:hover{
+	color: #54a7dc;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon a:hover{
+	color: #00C4F4;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(4) .icon a:hover {
+	color: #3171b1 !important;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(2) .icon-background::before:hover {
+	border-color: #54a7dc;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon-background::before:hover {
+	border-color: #00C4F4;
+}
+.contact-info-wrap .row [class*="col-"]:nth-child(4) .icon-background::before:hover {
+	border-color: #3171b1;
 }
 .contact-form-wrap {
 	background-image: url(../img/bg/contact_bg.png);
@@ -3714,7 +3739,7 @@ label {
 .circle_bg1 {
     border-radius: 100%;
     height: 100%;
-    width: 50%;
+    width: 41%;
     position: absolute;
     left: -21.875rem;
     bottom: -21.875rem;
