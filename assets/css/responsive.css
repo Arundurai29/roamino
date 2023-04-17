@@ -50,7 +50,91 @@
 					left: 29.4% !important;
 				}
 				}
-
+				@media(max-width:400px){
+	
+					.image {
+						left: 28.7% !important;
+					}
+					}
+				@media(max-width:991px) and (min-width:767px){
+	
+					.circle_bg1 {
+						inset: -20rem 3rem 0rem 0;
+						max-height: 65%;
+						width: 46%;
+					}
+					}
+					@media(max-width:766px) and (min-width:440px){
+	
+						.circle_bg1 {
+							inset: -20rem 3rem 0rem 0;
+							max-height: 45%;
+							width: 47%;
+						}
+						.webworld img {
+							max-height: 80%;
+							max-width: 50% !important;
+						}
+						}
+						@media(max-width:439px) {
+	
+							.circle_bg1 {
+								inset: -20rem 3rem 0rem 0;
+								max-height: 39%;
+								width: 51%;
+							}
+							.webworld img {
+								max-height: 80%;
+								max-width: 51% !important;
+							}
+							}
+							
+							@media(max-width:1500px) and (min-width:1242px){
+									.slider.slider-nav .slick-list.draggable>.slick-track {
+										margin-left: 523px;
+								}
+								}
+						
+								@media (max-width: 439px){
+								.webworld img {
+									max-height: 80%;
+									max-width: 73% !important;
+									margin: auto;
+								}
+								.webworld {
+									margin-top: 0px;
+									margin-right: 0px;
+								}
+								.circle_bg1 {
+									inset: -22rem 0rem 0rem 0;
+									max-height: 55%;
+									width: 80%;
+								}
+							.content-inner{
+								margin-left: 65px;
+							}
+							.chart-bg {
+								padding:40px 0;
+							}
+							.pb-130 {
+								padding-bottom: 40px;
+							}
+							.pt-60 {
+								padding-top: 0px;
+							}
+							.section-title{
+								text-align: center;
+							}
+							.document-content p{
+text-align: justify;
+							}
+							.document-content a{
+								margin: 10px 0px;
+							}
+							.pt-130 {
+								padding-top: 40px;
+							}
+						}
 /* Extra large devices (large desktops, 1800px and up) */
 @media (max-width: 1500px) {
 .container {
@@ -765,6 +849,36 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 767.98px) {
+	.space1{
+		display: none;
+	}
+	.romino-img {
+    display: grid;
+    place-items: center;
+    padding: 24px 0px;
+	position: relative;
+	top: 0;
+	left: 0;
+	transform: none;
+}
+.tm-token-distribution {
+	display: block;
+}
+.chart-content-inner {
+    margin: 0px ; 
+    padding: 0px; 
+}
+.chart-content .nav-pills {
+	width: 100%;
+	transform: none;
+	display: grid;
+    place-content: center;
+}
+	.about-content p {
+		margin-bottom: 40px;
+		padding: 15px 9px;
+		color: #A4B4C3;
+	}
 .chart-content-inner{
 		display: grid;
 }
