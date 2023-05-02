@@ -868,7 +868,7 @@ label {
 	z-index: 1;
 	padding: 120px 0 0;
 	overflow: hidden;
-	height: 100vh;
+	
 }
 .banner-bg::before {
 	content: "";
@@ -1373,11 +1373,13 @@ label {
 	cursor: pointer;
 }
 .partner-wrap ul li img {
-	opacity: .5;
-	transition: .3s linear;
+    transition: .3s linear;
+    filter: grayscale(1)opacity(0.5);
+    padding: 20px;
 }
 .partner-wrap ul li:hover img {
 	opacity: 1;
+	filter: none;
 }
 
 /* about-two */
@@ -2855,7 +2857,7 @@ label {
 	border-radius: 50%;
 	background: transparent;
 	font-size: 28px;
-	color: #FFFF;
+	color: #ffff;
 	margin: 0 auto;
 	position: relative;
 	border: 1px solid rgba(255, 255, 255, 0.07);
@@ -2888,7 +2890,7 @@ label {
 	border: 3px solid #FFFF;
 }
 .contact-info-item .icon-background::before:hover {
-	border: 3px solid #FF9700;
+	border: 3px solid ;
 }
 .contact-info-item .content p {
 	color: #fff;
@@ -2928,7 +2930,7 @@ label {
 .contact-info-wrap .row [class*="col-"]:nth-child(2) .icon-background::before:hover {
 	border-color: #54a7dc;
 }
-.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon-background::before:hover {
+.contact-info-wrap .row [class*="col-"]:nth-child(3) .icon-background:hover {
 	border-color: #00C4F4;
 }
 .contact-info-wrap .row [class*="col-"]:nth-child(4) .icon-background::before:hover {
@@ -3616,7 +3618,7 @@ label {
 		list-style: disc;
 	}
 	.romino-inner p{
-		margin-bottom: 15px !important;
+		margin-bottom: 10px !important;
 	}
 	.team-thumb img{
 		max-width: 197px;
@@ -3693,6 +3695,7 @@ label {
 .content-inner li>img{
 	width: 20px;
     height: 20px;
+	margin: 0px 10px;
 }
 .content-inner1{
     margin-left: 273px !important;
@@ -3896,8 +3899,8 @@ label {
     background: #6297e1;
 }
 .webworld img{
-	max-height: 80%;
-    max-width: 36% !important;
+    max-height: 82%;
+    max-width: 41% !important;
 }
 .webworld{
 	margin-top: 20px;
