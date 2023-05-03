@@ -868,7 +868,7 @@ label {
 	z-index: 1;
 	padding: 120px 0 0;
 	overflow: hidden;
-	
+	 background-position-y: -129px;
 }
 .banner-bg::before {
 	content: "";
