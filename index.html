@@ -162,9 +162,116 @@
                 </div>
             </section>
             <!-- banner-area-end -->
-              
+            <style>
+.count li {
+  display: inline-block;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+  text-align:center;
+}
+#countdown{
+    display: flex;
+    justify-content: center;
+}
+.count{
+    background: linear-gradient(359.09deg, rgba(217, 217, 217, 0.25) 30.47%, rgba(217, 217, 217, 0) 116.04%);
+    backdrop-filter: blur(3px);
+    border-radius: 16px;
+    padding: 0px 10px;
+}
+.count li span {
+  display: block;
+  font-size: 2.5rem;
+}
+
+.emoji {
+  display: none;
+  padding: 1rem;
+}
+
+.emoji span {
+  font-size: 4rem;
+  padding: 0 .5rem;
+}
+
+@media all and (max-width: 768px) {
+  
+  .count li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+  
+ .count li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
+            </style>
+            <script>
+                (function () {
+  const second = 1000,
+        minute = second * 60,
+        hour = minute * 60,
+        day = hour * 24;
+
+  //I'm adding this section so I don't have to keep updating this pen every year :-)
+  //remove this if you don't need it
+  let today = new Date(),
+      dd = String(today.getDate()).padStart(2, "0"),
+      mm = String(today.getMonth() + 1).padStart(2, "0"),
+      yyyy = today.getFullYear(),
+      nextYear = yyyy + 1,
+      dayMonth = "06/06/",
+      birthday = dayMonth + yyyy;
+  
+  today = mm + "/" + dd + "/" + yyyy;
+  if (today > birthday) {
+    birthday = dayMonth + nextYear;
+  }
+  //end
+  
+  const countDown = new Date(birthday).getTime(),
+      x = setInterval(function() {    
+
+        const now = new Date().getTime(),
+              distance = countDown - now;
+
+        document.getElementById("days").innerText = Math.floor(distance / (day)),
+          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+        //do something later when date is reached
+        if (distance < 0) {
+          document.getElementById("headline").innerText = "It's my birthday!";
+          document.getElementById("countdown").style.display = "none";
+          document.getElementById("content").style.display = "block";
+          clearInterval(x);
+        }
+        //seconds
+      }, 0)
+  }());
+            </script>
+            <section id="about" class="about-area pt-5">
+            <div class="container">
+  <div id="countdown">
+    <ul class="count">
+      <li><span id="days"></span>days</li>
+      <li><span id="hours"></span>Hours</li>
+      <li><span id="minutes"></span>Minutes</li>
+      <li><span id="seconds"></span>Seconds</li>
+    </ul>
+  </div>
+  <div id="content" class="emoji">
+    <span>🥳</span>
+    <span>🎉</span>
+    <span>🎂</span>
+  </div>
+</div>
+</section>
             <!-- about-area -->
             <section id="about" class="about-area pt-130 pb-130">
+                
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-12">
@@ -182,6 +289,7 @@
                             <div class="text-center webworld ">
                                 <img src="assets/img/images/tab4.png"  alt="">
                             </div>
+                            <div>
                             <div class="circle_bg1">
                                 <span></span>
                                 <span></span>
@@ -189,7 +297,10 @@
                                 <span></span>
                                 <span></span>
                                 <span></span>
+                                
                             </div>
+                            </div>
+                            
                             <div class="content-holder">
                                 <ul class="content-inner">
                                     <li class="content-inner1"> <img class="hide1" src="assets/img/images/mark.png"  alt="">Blockchain Powered   <img class="hide2" src="assets/img/images/mark.png"  alt=""></li>
@@ -209,11 +320,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- about-area-end -->
- <!-- chart-area-end -->
- <section id="sales" class="chart-area chart-bg jarallax">
-                <div class="container">
+<!-- tab start -->
+<div class="container">
                     <div class="chart-inner p-0">
                         <div class="row align-items-center justify-content-center">
                             <!-- <div class="col-lg-6 col-md-10 order-0 order-lg-2">
@@ -281,7 +389,7 @@
                                                                 <h2 class="title">Roamino platformv1</h2>
                                                                 <p>Roamino's love for travel and technology has made 
                                                                     it one of the most robust blockchain-based online travel booking platforms that enable users to book hotels, holiday events, flights, and other transport facilities online.</p>
-                                                                    <h2 class="title">System features</h2>
+                                                                    <h2 class="title s-20">System features</h2>
                                                                     <ul>
                                                                         <li>
                                                                             <p>
@@ -329,7 +437,7 @@
                                                                 <div class="romino-inner">
                                                                     <h2 class="title">Loaction NFT’s / Geo NFT’s</h2>
                                                                     <p>Bringing the NFT glory onto Roamino’s platform with the top utility. Introducing Roamino’s Location-specific NFT collection.</p>
-                                                                        <h2 class="title">System features</h2>
+                                                                        <h2 class="title s-20">System features</h2>
                                                                         <ul>
                                                                             <li>
                                                                                 <p>
@@ -376,7 +484,7 @@
                                                                     <p>
                                                                         Roamino will be adding one of the newest technologies to the platform, Metaverse Travel. Although it’s a long-term community-driven specter, Roamino will be the early one to explore and work on creating a Virtual travel space.
                                                                     </p>
-                                                                        <h2 class="title">System features</h2>
+                                                                        <h2 class="title s-20">System features</h2>
                                                                         <ul>
                                                                             <li>
                                                                                 <p>
@@ -423,7 +531,7 @@
                                                                     <p>
                                                                         DeRoam (Decentralised Roaming) platform is an end-to-end decentralized travel booking platform that connects commuters and property owners directly without any intermediaries.
                                                                         </p>
-                                                                        <h2 class="title">System features</h2>
+                                                                        <h2 class="title s-20">System features</h2>
                                                                         <ul>
                                                                             <li>
                                                                                 <p>
@@ -460,358 +568,16 @@
                         </div>
                     </div>
                 </div>
-                               
-<style>
-   .ima-ban{
-position: relative;
+<!-- tab end -->
 
-   }
-   .content {
-    margin: 75px auto;
-}
-.tabbed {
-  width: 100%;
-}
-.tabbed > input {
-  display: none;
-}
-.tabbed > label {
-  display: block;
-  float: left;
-  padding: 12px;
-  margin-left: 20px;
-  cursor: pointer;
-  transition: background-color: 0.3s;
-  border-radius: 10px 10px 0 0;
-}
-.tabbed > label:hover,
-.tabbed > input:checked + label {
-  background: #e91e73;
-}
-.tabing #left-la{
-    margin-left: 550px;
-}
-.tabing .tabs {
-  clear: both;
-  perspective:599px;
-}
-.tabing .tabs > div {
-  position: absolute;
-  width: 780px;
-  border: 4px solid #0f2f4f;
-  padding: 30px;  border-radius: 15px;
-  opacity: 0;
-  transform: rotateX(-20deg);
-  transform-origin: top center;
-  transition: opacity 0.3s, transform 1s;
-  z-index: 0;
-}
-
- #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
- #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
- #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
- #tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
-  z-index: 1;
-  opacity: 1;
-  transform: rotateX(0deg);
-}
-.tabing .tab-rigth div{
-    position: absolute;
-    right: 0;
-    margin-top: -48px;
-}
- .tabbed > label:hover, .tabbed > input:checked + label {
-    background: #0f2f4f !important;
-}
- .tabbed label{
-    font-size: 14px;
-    color: white;
-    font-weight: 400;
-    text-transform: uppercase;
-}
- .standed-img {
-    width: 320px;
-    -webkit-animation:spin 4s linear infinite;
-    -moz-animation:spin 4s linear infinite;
-    animation:spin1 7s linear infinite;
-}
-@-moz-keyframes spin1 { 
-    100% { -moz-transform: rotate(0deg); } 
-}
-@-webkit-keyframes spin1 { 
-    100% { -webkit-transform: rotate(360deg); } 
-}
-@keyframes spin1 { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
-}
-.tabing .round-img{
-    position: absolute;
-    left: 38px;
-    width: 300px;
-    top: 52px;
-    border: 2px solid #ffff;
-    border-radius: 50%;
-    padding: 20px;
-    z-index: -1;
-}
-.tabs-left div{
-    border: none !important;
-    margin-top: 10px;
-}
-.title{
-    font-size:28px;
-}
-.romino-inner p{
-   color:#ffff !important;
-}
-.tabing{
-    margin-bottom:300px;
-}
-</style>
-
-
-
-    
-
-<!-- test content -->
-
-<div class="container tabing">
-
-<div class="content">
-  <div class="tabbed">
-    <input type="radio" name="tabs" id="tab-nav-1" checked>
-    <label for="tab-nav-1" id="left-la">Roamino platformv1</label>
-
-    <input type="radio" name="tabs" id="tab-nav-2">
-    <label for="tab-nav-2">Loaction NFT’s / Geo NFT’s</label>
-
-    <input type="radio" name="tabs" id="tab-nav-3">
-    <label for="tab-nav-3"> METAVERSE TRAVEL</label>
-
-    <input type="radio" name="tabs" id="tab-nav-4">
-    <label for="tab-nav-4">DEROAM</label>
-    <div class="tabs tabs-left">
-      <div>
-      <img class="standed-img" src="assets/img/images/tab-img3.png" alt="">
-      <img class="round-img" src="assets/img/images/tab-img4.png" alt="">
-      </div>
-      <div>
-      <img class="standed-img" src="assets/img/images/tab-img3.png" alt="">
-      <img class="round-img" src="assets/img/images/tab-img2.png" alt="">
-      </div>
-      <div>
-      <img class="standed-img" src="assets/img/images/tab-img3.png" alt="">
-      <img class="round-img" src="assets/img/images/Logo 2.png" alt="">
-      </div>
-      <div>
-      <img class="standed-img" src="assets/img/images/tab-img3.png" alt="">
-      <img class="round-img" src="assets/img/images/abt-img_1.png" alt="">
-      </div>
-    </div> 
-    <div class="tabs tab-rigth">
-    <div class="romino-inner">
-                                                                <h2 class="title">Roamino platformv1</h2>
-                                                                <p>Roamino's love for travel and technology has made 
-                                                                    it one of the most robust blockchain-based online travel booking platforms that enable users to book hotels, holiday events, flights, and other transport facilities online.</p>
-                                                                    <h2 class="title">System features</h2>
-                                                                    <ul>
-                                                                        <li>
-                                                                            <p>
-                                                                                A one-stop destination for roamers. 
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>
-                                                                                Ensure a transparent ecosystem, Blockchain-
-                                                                                based review system, less commission, and more
-                                                                                secure. 
-                                                                            </p>
-                                                                        </li>
-                                                                        <li>
-                                                                            <p>
-                                                                                An efficient and economical travel booking 
-                                                                                platform that empowers tokenized incentives. 
-                                                                            </p>
-                                                                        
-                                                                        </li>
-                                                                        <li><p>
-                                                                            More payment flexibility, which includes all Fiat
-                                                                            currencies & Cryptocurrencies
-                                                                        </p></li>
-                                                                    </ul>
-                                                                    <p>
-                                                            </div>
-                                                        
-                                                            <div class="romino-inner">
-                                                                    <h2 class="title">Loaction NFT’s / Geo NFT’s</h2>
-                                                                    <p>Bringing the NFT glory onto Roamino’s platform with the top utility. Introducing Roamino’s Location-specific NFT collection.</p>
-                                                                        <h2 class="title">System features</h2>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <p>
-                                                                                    Limited collections of Location-based NFTs based on popular tourist spots.
-                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    People who hold specific region NFT and travel to the same location can avail of discounts or free travel or stays. 
-                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    Digital collectibles will play an active role in our loyalty program, exclusive club memberships, discounts, and more. 
-                                                                                </p>
-                                                                            
-                                                                            </li>
-                                                                            <li><p>
-                                                                                Free Metaverse Travel Access
-                                                                            </p></li>
-                                                                        </ul>
-                                                                        <p>
-                                                                           
-                                                                              
-                                                                        </p>
-                                                                </div>
-                                                            
-                                                                <div class="romino-inner">
-                                                                    <h2 class="title">Metaverse travel</h2>
-                                                                    <p>
-                                                                        Roamino will be adding one of the newest technologies to the platform, Metaverse Travel. Although it’s a long-term community-driven specter, Roamino will be the early one to explore and work on creating a Virtual travel space.
-                                                                    </p>
-                                                                        <h2 class="title">System features</h2>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <p>
-                                                                                    Roamino will eliminate the need to travel physically across the world by showcasing the destinations virtually. 
-                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    VR/AR compatibility and internet connectivity are all you need.
-                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    3D digital verse of the location will whet a wanderlust’s appetite for real destinations.
-                                                                                </p>
-                                                                            
-                                                                            </li>
-                                                                            <li><p>
-                                                                                The metaverse can be used to organize events, concerts, conferences, exhibitions, etc.
-                                                                            </p></li>
-                                                                        </ul>
-                                                                        <p>
-                                                                           
-                                                                              
-                                                                        </p>
-                                                                </div>
-                                                                <div class="romino-inner">
-                                                                    <h2 class="title">DeRoam</h2>
-                                                                    <p>
-                                                                        DeRoam (Decentralised Roaming) platform is an end-to-end decentralized travel booking platform that connects commuters and property owners directly without any intermediaries.
-                                                                        </p>
-                                                                        <h2 class="title">System features</h2>
-                                                                        <ul>
-                                                                            <li>
-                                                                                <p>
-                                                                                    END-TO-END Decentralized Travel booking platform                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    0% commission
-                                                                                </p>
-                                                                            </li>
-                                                                            <li>
-                                                                                <p>
-                                                                                    Smart Contract Automation, powered by blockchain technology                                                                                </p>
-                                                                            
-                                                                            </li>
-                                                                            <li><p>
-                                                                                Secured, P2P verifications and a completely user-centric Travel platform
-                                                                            </p></li>
-                                                                        </ul>
-                                                                        <p>
-                                                                           
-                                                                              
-                                                                        </p>
-                                                                </div>
-    </div>
-   
-  </div>
-</div>
-</div>
-        
-<!-- test content end -->
             </section>
-            
-            <!-- chart-area-end -->
+            <!-- about-area-end -->
+ <!-- chart-area-end -->
 
-<!-- area-bg -->
-<div class="area-bg mt-5" id="tokan">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-12">
-                <div class="section-title text-center mb-50">
-                    <span class="sub-title">Token</span>
-                    <h2 class="title">Token <span>Distribution</span></h2>
-                </div>
-                <div class="empty-space col-md-b55 col-xs-b35"></div>
-                <div class="tm-token-distribution col-xs-b1" style="    justify-content: space-around;">
-                    <div class="tm-token-distribution-left">
-                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
-                            <li><span class="tm-blank tm-token-color1"></span><span
-                                    class="tm-percentage tm-light-blue-c">70%</span>Public Sale</li>
-                            <li><span class="tm-blank tm-token-color2"></span><span
-                                    class="tm-percentage tm-light-blue-c">20%</span> Team</li>
-                            <li><span class="tm-blank tm-token-color3"></span><span
-                                    class="tm-percentage tm-light-blue-c">15%</span> ICO Pre-Sale 1</li>
-                            <li><span class="tm-blank tm-token-color4"></span><span
-                                    class="tm-percentage tm-light-blue-c">10%</span> ICO Pre-Sale 2</li>
-                           
-                        </ul>
-                    </div>
-                    <div class="tm-token-distribution-right tm-sp-token-distribution">
-                        <img src="assets/img/images/pre_age2.png" width="350px" alt="" class="tm-token-distribution-img">
-                    </div>
-                </div>
-                <div class="empty-space col-lg-b0 col-xs-b55"></div>
-            </div><!-- .col -->
-            <div class="container p-5">
-                <div class="section-title text-center mb-50">
-                    
-                    <h2 class="title">Token <span> Sale Proceeds
-                    </span></h2>
-                </div>
-                  <div class="empty-space col-md-b55 col-xs-b30"></div>
-                <div class="tm-token-distribution" style=" justify-content: space-around;">
-                    <div class="tm-token-distribution-left">
-                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
-                            <li><span class="tm-blank tm-token-color1"></span><span
-                                    class="tm-percentage tm-light-blue-c">52%</span> Roamino Platform Development & Operations</li>
-                            <li><span class="tm-blank tm-token-color2"></span><span
-                                    class="tm-percentage tm-light-blue-c">25%</span> Marketing</li>
-                            <li><span class="tm-blank tm-token-color3"></span><span
-                                    class="tm-percentage tm-light-blue-c">20%</span> Dedicated Roamino’s D-Smart Travel & Metaverse </li>
-                            <li><span class="tm-blank tm-token-color4"></span><span
-                                    class="tm-percentage tm-light-blue-c">15%</span>Legal & Regulatory Coverage</li>
-                           
-                        </ul>
-                        <div class="empty-space col-lg-b0 col-xs-b40"></div>
-                    </div>
-                    <div class="tm-token-distribution-right tm-sp-token-distribution col-xs-b1">
-                        <img src="assets/img/images/pre_age.png" width="350px" alt="" class="tm-token-distribution-img">
-                    </div>
-                </div>
-            </div><!-- .container -->
-            
-        </div>
-    </div>
       
-            <!-- choose-area -->
-            <section class="choose-area pb-130" id="">
+            <!-- chart-area-end -->
+  <!-- choose-area -->
+  <section class="choose-area  pb-130" id="">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
@@ -824,24 +590,35 @@ position: relative;
                     <div class="row choose-active">
                         <div class="col-lg-3">
                             <div class="choose-item">
-                                <div class="choose-icon">
+                                <div class="choose-icon"
+                                id="show" >
                                     <img src="assets/img/icon/choose_icon01.svg" alt="">
                                 </div>
                                 <div class="choose-content">
-                                    <h2 class="title"><a href="#">Payment 
+                                    <h2 class="title"><a href="#" >Payment 
                                         mode</a></h2>
+                                        <div>
+                                            <p  id="show1" style="display:none;">
+                                                Lorem ipsum dolor sit, amet  <br> adipisicing elit. perspiciatis <br> ratione quidem nulla excepturi <br> atque, 
+                                            </p>
+                                        </div>
                                     <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
                             <div class="choose-item">
-                                <div class="choose-icon">
+                                <div class="choose-icon"  id="show-1" >
                                     <img src="assets/img/icon/choose_icon02.svg" alt="">
                                 </div>
                                 <div class="choose-content">
                                     <h2 class="title"><a href="#">Access to loyalty
                                         program</a></h2>
+                                        <div>
+                                            <p  id="show2" style="display:none;">
+                                                Lorem ipsum dolor sit, amet  <br> adipisicing elit. perspiciatis <br> ratione quidem nulla excepturi <br> atque, 
+                                            </p>
+                                        </div>
                                     <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
                                 </div>
                             </div>
@@ -932,13 +709,207 @@ position: relative;
                 </div>
             </section>
             <!-- choose-area-end -->
+<!-- area-bg -->
+<div class="area-bg mt-5" id="tokan">
+    <div class="container pb-130">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="section-title text-center mb-50">
+                    <span class="sub-title">Token</span>
+                    <h2 class="title">ROAM<span> Tokenomics</span></h2>
+                </div>
+                <div class="tm-token-distribution col-xs-b1" style="    justify-content: space-around;">
+                    <div class="tm-token-distribution-left">
+                    <h2 class="token-detals">ROAM Token Details</h2>
+                        <div class="token-details" style="display: flex;">
+                       
+                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                            <li><span
+                                    class="tm-percentage tm-light-blue-c">Public Sale</span></li>
+                            <li><span
+                                    class="tm-percentage tm-light-blue-c">Team</span></li>
+                            <li><span
+                                    class="tm-percentage tm-light-blue-c">ICO Pre-Sale 1</span></li>
+                            <li><span
+                                    class="tm-percentage tm-light-blue-c"> ICO Pre-Sale 2 </span></li>
+                           
+                        </ul> 
+                        <ul style="margin-left: 57px;" class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                            <li>70%</li>
+                            <li> 20%</li>
+                            <li>15% </li>
+                            <li> 10%</li>
+                           
+                        </ul> 
+                        </div>
+                        <h2 class="token-dist">ROAM Token Distribution</h2>
+                        <div class="tm-token-distribution-left">
+                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                            <li><span class="tm-blank tm-token-color1"></span><span
+                                    class="tm-percentage tm-light-blue-c">52%</span> Roamino Platform Development & Operations</li>
+                            <li><span class="tm-blank tm-token-color2"></span><span
+                                    class="tm-percentage tm-light-blue-c">25%</span> Marketing</li>
+                            <li><span class="tm-blank tm-token-color3"></span><span
+                                    class="tm-percentage tm-light-blue-c">20%</span> Dedicated Roamino’s D-Smart Travel & Metaverse </li>
+                            <li><span class="tm-blank tm-token-color4"></span><span
+                                    class="tm-percentage tm-light-blue-c">15%</span>Legal & Regulatory Coverage</li>
+                           
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="tm-token-distribution-right tm-sp-token-distribution">
+                        <img src="assets/img/images/pre_age2.png" width="350px" alt="" class="tm-token-distribution-img">
+                    </div>
+                </div>
+                <div class="empty-space col-lg-b0 col-xs-b55"></div>
+            </div><!-- .col -->
+            <!-- <div class="container p-5">
+                <div class="section-title text-center mb-50">
+                    
+                    <h2 class="title">Token <span> Sale Proceeds
+                    </span></h2>
+                </div>
+                  <div class="empty-space col-md-b55 col-xs-b30"></div>
+                <div class="tm-token-distribution" style=" justify-content: space-around;">
+                    <div class="tm-token-distribution-left">
+                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                            <li><span class="tm-blank tm-token-color1"></span><span
+                                    class="tm-percentage tm-light-blue-c">52%</span> Roamino Platform Development & Operations</li>
+                            <li><span class="tm-blank tm-token-color2"></span><span
+                                    class="tm-percentage tm-light-blue-c">25%</span> Marketing</li>
+                            <li><span class="tm-blank tm-token-color3"></span><span
+                                    class="tm-percentage tm-light-blue-c">20%</span> Dedicated Roamino’s D-Smart Travel & Metaverse </li>
+                            <li><span class="tm-blank tm-token-color4"></span><span
+                                    class="tm-percentage tm-light-blue-c">15%</span>Legal & Regulatory Coverage</li>
+                           
+                        </ul>
+                        <div class="empty-space col-lg-b0 col-xs-b40"></div>
+                    </div>
+                    <div class="tm-token-distribution-right tm-sp-token-distribution col-xs-b1">
+                        <img src="assets/img/images/pre_age.png" width="350px" alt="" class="tm-token-distribution-img">
+                    </div>
+                </div>
+            </div>.container -->
+            
+        </div>
+    </div>
+      
+          
 
             <!-- chart-area -->
-           
+            <style>
+    .ima-ban{
+ position: relative;
+ 
+    }
+    .content {
+     margin: 75px auto;
+ }
+ .tabbed {
+   width: 100%;
+ }
+ .tabbed > input {
+   display: none;
+ }
+ .tabbed > label {
+   display: block;
+   float: left;
+   padding: 12px;
+   margin-left: 20px;
+   cursor: pointer;
+   transition: background-color: 0.3s;
+   border-radius: 10px 10px 0 0;
+ }
+ .tabbed > label:hover,
+ .tabbed > input:checked + label {
+   background: #e91e73;
+ }
+ .tabing #left-la{
+     margin-left: 550px;
+ }
+ .tabing .tabs {
+   clear: both;
+   perspective:599px;
+ }
+ .tabing .tabs > div {
+   position: absolute;
+   width: 780px;
+   border: 4px solid #0f2f4f;
+   padding: 30px;  border-radius: 15px;
+   opacity: 0;
+   transform: rotateX(-20deg);
+   transform-origin: top center;
+   transition: opacity 0.3s, transform 1s;
+   z-index: 0;
+ }
+ 
+  #tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+  #tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+  #tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+  #tab-nav-4:checked ~ .tabs > div:nth-of-type(4) {
+   z-index: 1;
+   opacity: 1;
+   transform: rotateX(0deg);
+ }
+ .tabing .tab-rigth div{
+     position: absolute;
+     right: 0;
+     margin-top: -48px;
+ }
+  .tabbed > label:hover, .tabbed > input:checked + label {
+     background: #0f2f4f !important;
+ }
+  .tabbed label{
+     font-size: 14px;
+     color: white;
+     font-weight: 400;
+     text-transform: uppercase;
+ }
+  .standed-img {
+     width: 320px;
+     -webkit-animation:spin 4s linear infinite;
+     -moz-animation:spin 4s linear infinite;
+     animation:spin1 7s linear infinite;
+ }
+ @-moz-keyframes spin1 { 
+     100% { -moz-transform: rotate(0deg); } 
+ }
+ @-webkit-keyframes spin1 { 
+     100% { -webkit-transform: rotate(360deg); } 
+ }
+ @keyframes spin1 { 
+     100% { 
+         -webkit-transform: rotate(360deg); 
+         transform:rotate(360deg); 
+     } 
+ }
+ .tabing .round-img{
+     position: absolute;
+     left: 38px;
+     width: 300px;
+     top: 52px;
+     border: 2px solid #ffff;
+     border-radius: 50%;
+     padding: 20px;
+     z-index: -1;
+ }
+ .tabs-left div{
+     border: none !important;
+     margin-top: 10px;
+ }
+ .title{
+     font-size:28px;
+ }
+ .romino-inner p{
+    color:#ffff !important;
+ }
+ .tabing{
+     margin-bottom:300px;
+ }
+ </style>
 
 	<!-- Start Road Map Section -->
-	<section class="tm-roadmap-wrap" data-bgimage="assets/img/orange-roadmap-bg.jpg" id="roadmap">
-		<div class="empty-space col-md-b90 col-xs-b55"></div>
+	<section  class="chart-area chart-bg jarallax"  id="roadmap">
 		<div class="container">
                 <div class="section-title text-center mb-50">
                     <span class="sub-title">Our Big Plans</span>
@@ -1164,13 +1135,13 @@ position: relative;
     width: 100% !important;
 }
 .tm-roadmap-text h3{
-    color: #154270;
+    color: #FFFF;
     font-weight: 400;
     font-size: 18px;
     font-family: 'Outfit', sans-serif;
 }
 .tm-f20,.tm-md-f15{
-    color: #154270;
+    color: #FFFF;
     font-weight: 400;
     font-size: 18px; 
     font-family: 'Outfit', sans-serif;
@@ -1222,7 +1193,7 @@ position: relative;
                         <div class="col-xl-6">
                             <div class="section-title text-center mb-70">
                                 <span class="sub-title">OUr team</span>
-                                <h2 class="title">The Leadership <br> <span>Team</span></h2>
+                                <h2 class="title">The Leadership <span>Team</span></h2>
                             </div>
                         </div>
                     </div>
@@ -1234,7 +1205,7 @@ position: relative;
                                 </div>
                                 <div class="team-content">
                                     <h2 class="title">Jashwanth Sasidhar</h2>
-                                    <span>Founder & CO</span>
+                                    <span>Founder & CEO</span>
                                     <!-- <ul class="team-social">
                                         <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -1316,7 +1287,7 @@ position: relative;
 }
     </style>
      <!-- partner-area -->
-          <div class="partner-area pb-130">
+          <div class="partner-area pb-130 pt-80">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8">
@@ -1344,7 +1315,7 @@ position: relative;
                 </div>
             </div> 
             <!-- partner-area-end -->
-	<section class="tm-faq-wrap tm-bg" id="faq" style="background-image: url(assets/img/bg/faq-bg.png); background-position: center;
+	<section class="tm-faq-wrap tm-bg" id="faq" style="background-image: url(assets/img/bg/faq.png); background-position: center;
     background-size: cover;
     background-repeat: no-repeat;">
 		<div class="empty-space col-md-b90 col-xs-b55"></div>
@@ -1787,7 +1758,7 @@ position: relative;
                         <div class="row align-items-center">
                             <div class="col-lg-6">
                                 <div class="copyright-text">
-                                    <p>Copyright &copy; 20223. All Rights Reserved Roamino</p>
+                                    <p>Copyright &copy; 2023. All Rights Reserved Roamino</p>
                                 </div>
                             </div>
                             <div class="col-lg-6 d-none d-sm-block">
