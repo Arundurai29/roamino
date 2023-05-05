@@ -358,3 +358,18 @@ function wowAnimation() {
 
 
 })(jQuery);
+
+/*=============================================
+	=    		use case	         =
+=============================================*/
+$(document).ready(function(){
+    
+	$('#show').click(function(){
+		$('#show1').toggle('slow');
+	});
+	 
+	$('#show-1').click(function(){
+		$('#show2').toggle('slow');
+	});
+});
+
