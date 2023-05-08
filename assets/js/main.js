@@ -371,5 +371,13 @@ $(document).ready(function(){
 	$('#show-1').click(function(){
 		$('#show2').toggle('slow');
 	});
+	 
+	$('#show-2').click(function(){
+		$('#show3').toggle('slow');
+	});
+	 
+	$('#show-3').click(function(){
+		$('#show4').toggle('slow');
+	});
 });
 
