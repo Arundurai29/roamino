@@ -1313,9 +1313,7 @@ label {
 	left: 60px;
 	top: 40px;
 }
-.about-content {
-	margin-left: 70px;
-}
+
 .section-title .sub-title {
 	text-transform: uppercase;
 	color: #fff;
@@ -1352,8 +1350,8 @@ label {
 	color: #00C4F4;
 }
 .about-content p {
-	margin-bottom: 40px;
-    padding: 10px 100px 10px 50px;
+    margin-bottom: 40px;
+    padding: 20px 90px;
     color: #A4B4C3;
 }
 .partner-wrap ul {
@@ -2087,6 +2085,8 @@ label {
 	background-image: url(../img/bg/area_bg.png);
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+    background-position-y: 80px;
 }
 .document-content .document-list {
 	margin-bottom: 40px;
@@ -3756,7 +3756,7 @@ label {
     height: 100%;
     width: 70%;
     position: absolute;
-    top: -100px;
+    top: -144px;
     left: 200px;
 }
 .circle_bg1 span{
@@ -3924,4 +3924,42 @@ label {
 .token-dist{
 	font-size: 32px;
 	margin: 50px 0px 30px 0px;
+}
+.dot::before{
+	content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: #00C4F4;
+    border-radius: 50%;
+}
+.choose-item h3{
+    font-size: 18px;
+}
+.choose-con h4{
+	font-size: 52px;
+    margin: 0;
+}
+.choose-con h5{
+	font-size: 16px;
+    margin: 0;
+}
+.choose-con{
+	margin: 20px 0px;
+}
+.choose-foot{
+	display: flex;
+	justify-content: space-between;
+
+}
+.choose-in{
+	display: flex;
+	justify-content: space-between;
+	
+}
+.re-item{
+	padding: 40px 30px !important;
 }
