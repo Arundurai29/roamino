@@ -176,10 +176,30 @@
     justify-content: center;
 }
 .count{
-    background: linear-gradient(359.09deg, rgba(217, 217, 217, 0.25) 30.47%, rgba(217, 217, 217, 0) 116.04%);
-    backdrop-filter: blur(3px);
-    border-radius: 16px;
-    padding: 0px 10px;
+    user-select: none;
+	-moz-user-select: none;
+	background: #040E18;
+	border-radius: 70px;
+    border-radius: 40px;
+    border: 2px solid #0d314163;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 700;
+	letter-spacing: .5px;
+	line-height: 1;
+	margin-bottom: 0;
+	padding: 25px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	touch-action: manipulation;
+	transition: all 0.4s 0s;
+	vertical-align: middle;
+	white-space: nowrap;
+	box-shadow: 0px 6px 22px rgba(6, 34, 51, 0.22);
+	background-clip: padding-box;
+	position: relative;
 }
 .count li span {
   display: block;
@@ -276,10 +296,10 @@
                     <div class="row align-items-center">
                         <div class="col-lg-12">
                             <div class="about-content wow fadeInRight" data-wow-delay=".2s">
-                                <div class="section-title mb-30 text-center">
+                                <div class="section-title mb-30 text-center" >
                                     <span class="sub-title">Who we are</span>
                                     <h2 class="title">About Roamino</h2>
-                                    <p>Roamino is a Next-gen online travel booking platform driven by the cutting-edge Blockchain technology with the Ultimate goal of travel decentralization. Roamino provides a wide range of Hotels, Flights, and other travel facilities for roamers to book and plan their Holidays securely & instantly.</p>
+                                    <p>At Roamino, we're leading the charge to revolutionize the Travel & Tourism industry by decentralizing it and empowering both travelers and providers. Roamino’s Next-gen platform is completely driven by cutting-edge blockchain technology with the ultimate goal of Travel decentralization. Whether its hotels or flights, Roamino offers a vast range of travel facilities, enabling roamers to book and plan their holidays securely and instantly without intermediaries. </p>
 
                                 </div>
                             </div>
@@ -287,7 +307,7 @@
                        
                         <div class="col-lg-12 position-relative " >
                             <div class="text-center webworld ">
-                                <img src="assets/img/images/tab4.png"  alt="">
+                                <img src="assets/img/images/roamino.png"  alt="">
                             </div>
                             <div>
                             <div class="circle_bg1">
@@ -476,7 +496,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-4 col-md-12">
                                                             <div class="romino-img">
-                                                                <img src="assets/img/images/circle.png" alt="">
+                                                                <img src="assets/img/images/img4.png" alt="">
                                                             </div></div>
                                                             <div class="col-lg-8 col-md-12">
                                                                 <div class="romino-inner">
@@ -576,8 +596,8 @@
 
       
             <!-- chart-area-end -->
-  <!-- choose-area -->
-  <section class="choose-area  pb-130" id="">
+ <!-- choose-area -->
+ <section class="choose-area  pb-130" id="">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
@@ -588,60 +608,70 @@
                         </div>
                     </div>
                     <div class="row choose-active">
-                        <div class="col-lg-3">
-                            <div class="choose-item">
-                                <div class="choose-icon"
-                                id="show" >
-                                    <img src="assets/img/icon/choose_icon01.svg" alt="">
-                                </div>
-                                <div class="choose-content">
-                                    <h2 class="title"><a href="#" >Payment 
-                                        mode</a></h2>
-                                        <div>
-                                            <p  id="show1" style="display:none;">
-                                                Lorem ipsum dolor sit, amet  <br> adipisicing elit. perspiciatis <br> ratione quidem nulla excepturi <br> atque, 
-                                            </p>
-                                        </div>
-                                    <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3">
-                            <div class="choose-item">
-                                <div class="choose-icon"  id="show-1" >
+                    <div class="col-lg-3">
+                            <div class="choose-item"  id="show-1" >
+                                <div class="choose-icon" >
                                     <img src="assets/img/icon/choose_icon02.svg" alt="">
                                 </div>
                                 <div class="choose-content">
-                                    <h2 class="title"><a href="#">Access to loyalty
-                                        program</a></h2>
+                                    <h2 class="title"><a href="#">Pay for your travel</a></h2>
                                         <div>
                                             <p  id="show2" style="display:none;">
-                                                Lorem ipsum dolor sit, amet  <br> adipisicing elit. perspiciatis <br> ratione quidem nulla excepturi <br> atque, 
-                                            </p>
+                                            Say goodbye to cumbersome traditional payment methods - Roam Token allows you to easily book flights, accommodation, and even travel ads. Make your bookings using Roam Token for a seamless and secure transaction.                                            </p>
                                         </div>
                                     <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <img src="assets/img/icon/choose_icon03.svg" alt="">
+                            <div class="choose-item" id="show">
+                                <div class="choose-icon"
+                                 >
+                                    <img src="assets/img/icon/choose_icon01.svg" alt="">
                                 </div>
                                 <div class="choose-content">
-                                    <h2 class="title"><a href="#">Metaverse 
-                                        travel</a></h2>
+                                    <h2 class="title"><a href="#" >Access to Loyalty program</a></h2>
+                                        <div>
+                                            <p  id="show1" style="display:none;">
+                                            We know how important it is to reward loyal customers. That's why we've created a loyalty program that allows you to earn rewards by using Roam Token on our platform. The more you use Roam Token, the more rewards you'll earn!
+                                           </p>
+                                        </div>
+                                    <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3">
+                            <div class="choose-item"   id="show-2">
+                                <div class="choose-icon"
+                               >
+                                    <img src="assets/img/icon/choose_icon01.svg" alt="">
+                                </div>
+                                <div class="choose-content">
+                                    <h2 class="title"><a href="#" >Get exclusive NFT privileges</a></h2>
+                                        <div>
+                                            <p  id="show3" style="display:none;">
+                                            ROAM tokens can be used as means of payment for our NFT collection and users who purchase NFT using ROAM gets discounts or bonuses.
+                                           </p>
+                                        </div>
+                                    <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="choose-item">
-                                <div class="choose-icon">
-                                    <img src="assets/img/icon/choose_icon04.svg" alt="">
+                            <div class="choose-item"   id="show-3">
+                                <div class="choose-icon"
+                               >
+                                    <img src="assets/img/icon/choose_icon01.svg" alt="">
                                 </div>
                                 <div class="choose-content">
-                                    <h2 class="title"><a href="#">Metaverse 
-                                        travel</a></h2>
+                                    <h2 class="title"><a href="#" >Get rewards for using Roam Token</a></h2>
+                                        <div>
+                                            <p  id="show4" style="display:none;">
+                                            We appreciate our users and want to show it! Earn ROAM cashbacks and discounts on your each booking when you use Roam Token.
+                                           </p>
+                                        </div>
+                                    <!-- <p>Add new, trending and rare artwork to your collection.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -702,6 +732,7 @@
                 </div>
             </section>
             <!-- choose-area-end -->
+
 <!-- area-bg -->
 <div class="area-bg mt-5" id="tokan">
     <div class="container pb-130">
@@ -756,38 +787,88 @@
                 </div>
                 <div class="empty-space col-lg-b0 col-xs-b55"></div>
             </div><!-- .col -->
-            <!-- <div class="container p-5">
-                <div class="section-title text-center mb-50">
-                    
-                    <h2 class="title">Token <span> Sale Proceeds
-                    </span></h2>
-                </div>
-                  <div class="empty-space col-md-b55 col-xs-b30"></div>
-                <div class="tm-token-distribution" style=" justify-content: space-around;">
-                    <div class="tm-token-distribution-left">
-                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
-                            <li><span class="tm-blank tm-token-color1"></span><span
-                                    class="tm-percentage tm-light-blue-c">52%</span> Roamino Platform Development & Operations</li>
-                            <li><span class="tm-blank tm-token-color2"></span><span
-                                    class="tm-percentage tm-light-blue-c">25%</span> Marketing</li>
-                            <li><span class="tm-blank tm-token-color3"></span><span
-                                    class="tm-percentage tm-light-blue-c">20%</span> Dedicated Roamino’s D-Smart Travel & Metaverse </li>
-                            <li><span class="tm-blank tm-token-color4"></span><span
-                                    class="tm-percentage tm-light-blue-c">15%</span>Legal & Regulatory Coverage</li>
-                           
-                        </ul>
-                        <div class="empty-space col-lg-b0 col-xs-b40"></div>
-                    </div>
-                    <div class="tm-token-distribution-right tm-sp-token-distribution col-xs-b1">
-                        <img src="assets/img/images/pre_age.png" width="350px" alt="" class="tm-token-distribution-img">
-                    </div>
-                </div>
-            </div>.container -->
+          
             
         </div>
     </div>
       
-          
+           <!-- choose-area -->
+  <section class="choose-area  pb-130" id="">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-xl-6">
+                            <div class="section-title text-center mb-50">
+                                <h2 class="title">Roam sale <span>stages </span></h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row choose-active">
+                        <div class="col-lg-3">
+                            <div class="choose-item re-item" style="opacity: 0.4;">
+                               <h3>STAGE 1</h3>
+                                <div class="choose-con">
+                                   <H4>30%</H4>
+                                   <h5>BONUS</h5>
+                                </div>
+                                <p>1 day only</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="choose-item re-item">
+                             
+                            <h3>STAGE 2</h3>
+                            <div class="choose-in">
+                                <div class="choose-con">
+                                   <H4  style="color: #00C4F4;">30%</H4>
+                                   <h5>BONUS</h5>
+                                   </div>
+                                   <div class="choose1">
+                                <a href="#" class="btn" style="padding:15px; margin-top: 30px;border: 2px solid #1b405fc4;">Buy Now</a>
+                               
+                                </div>
+                                </div>
+                                <div class="choose-foot">
+                                <p style="margin-top: 15px;">1 Week only</p>
+                                <p>End In <br> 20:05:2023</p>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                        <div class="choose-item re-item" style="opacity: 0.7;">
+                             
+                             <h3>STAGE 3</h3>
+                                 <div class="choose-con">
+                                    <H4 >5%</H4>
+                                    <h5>BONUS</h5>
+                                    </div>
+                                 <div class="choose-foot">
+                                 <p style="margin-top: 15px;">2 week only</p>
+                                 <p>Start In <br> 30:05:2023</p>
+                                 </div>
+                                
+                             </div>
+                        </div>
+                        <div class="col-lg-3">
+                        <div class="choose-item re-item" style="opacity: 0.7;">
+                             
+                             <h3>STAGE 4</h3>
+                                 <div class="choose-con">
+                                    <H4 >0%</H4>
+                                    <h5>BONUS</h5>
+                                    </div>
+                                 <div class="choose-foot">
+                                 <p style="margin-top: 15px;">1 Month only</p>
+                                 <p>Start In <br> 5:06:2023</p>
+                                 </div>
+                                
+                             </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </section>
+            <!-- choose-area-end -->
 
             <!-- chart-area -->
             <style>
@@ -1026,7 +1107,7 @@
 				<div class="slider slider-for">
 					<div>
 						<div class="tm-roadmap-text tm-lh27">
-							<h3 class="tm-f20 tm-md-f15 tm-mb">Idea and research</h3>
+							<h3 class="tm-f20 tm-md-f15 tm-mb">Idea and research </h3>
 							<div class="empty-space col-md-b20 col-xs-b20"></div>
 							<div class="tm-f20 tm-md-f15"> Roamino concept creation </div>
 						</div>
@@ -1054,7 +1135,7 @@
 						<div class="tm-roadmap-text tm-lh27">
 							<h3 class="tm-f20 tm-md-f15 tm-mb">Testing of Roamino platform
                                 </h3>
-							<div class="empty-space col-md-b20 col-xs-b20"></div>
+							
 							<div class="tm-f20 tm-md-f15"> Internal Wallet Development <br>
                                 $ Roam token listing on DEX
                                 NFT design</div>
@@ -1276,7 +1357,7 @@
     right: 0;
     left: 0;
     content: "";
-    background-color: rgba(3,11,21,0.5);
+    background-color: rgba(3,11,21,0.9);
 }
     </style>
      <!-- partner-area -->
@@ -1332,51 +1413,40 @@
 								<div class="tm-faq">
 									<div class="accordian-wrapper">
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. What is Cryptocurrency?
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. What is an ICO sale?
 											</h3>
-											<div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<div class="accordian-body"> An Initial Coin Offering (ICO) is a method of fundraising that involves issuing and selling digital tokens in exchange for other cryptocurrencies or fiat currencies.</div>
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. How does one acquire bitcoins? 
-												Ethereum?</h3>
-											<div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. How do I participate in an ICO sale? </h3>
+											<div class="accordian-body">To participate in an ICO sale, you need to have a cryptocurrency wallet like Metamask or Trustwallet that supports the tokens. You then send the required amount of cryptocurrency to the ICO sale address provided by the issuer to buy.</div>
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. Which crypto currency is best to buy today?
-												does populous currently support?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. WWhat is a whitepaper and why is it important for an ICO sale?</h3>
+                                                <div class="accordian-body"> A whitepaper is a detailed document that explains the project, its goals, and how it plans to achieve them. It also provides information on the team behind the project, the token economics, and the use cases for the token. A whitepaper is important for an ICO sale because it gives investors a better understanding of the project and helps them make informed investment decisions.</div>
 
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. Can I make money with bitcoin?
-												security does populous use to protect my account?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. 	How do I store the tokens I receive from an ICO sale?</h3>
+                                                <div class="accordian-body"> You can store the tokens you receive from an ICO sale in a cryptocurrency wallet that supports the specific token.</div>
 
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16"> Q. How about day trading crypto?
-												does Ocher attempt to solve?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16"> Q.	What are the risks involved in participating in an ICO sale?</h3>
+                                                <div class="accordian-body"> The risks involved in participating in an ICO sale include price volatility, fraud, or lack of regulation. It's important to conduct thorough research on the project and team behind the ICO before investing.</div>
 
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. What happens when bitcoins are lost?
-												consider to be a success with this ICO?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. What is the difference between a utility token and a security token?</h3>
+                                                <div class="accordian-body"> A utility token is a token that is designed to be used within a specific ecosystem or platform. A security token, on the other hand, represents ownership in an asset or company and is subject to securities laws and regulations.</div>
 
 										</div><!-- .single-accordian -->
 										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. Where is the invest of my bitcoin?
-												ERC-20 resellable?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.</div>
+											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. 	Can I participate in an ICO sale from any country? </h3>
+                                                <div class="accordian-body">The legality of ICO sales varies from country to country. Some countries have banned ICO sales altogether, while others have implemented regulations to govern them. It's important to check the laws and regulations in your country before participating in an ICO sale.</div>
 
 										</div><!-- .single-accordian -->
-										<div class="single-accordian">
-											<h3 class="accordian-head tm-light-blue-c tm-f20 tm-md-f16">Q. When to sell a cryptocurrency?
-												out to with other questions?</h3>
-                                                <div class="accordian-body">The best cryptocurrency to buy is one we are willing to hold onto even if it goes down. For example, I believe in Steem enough that I am willing to hold it even if it goes down 99% and would start buying more of it if the price dropped.
-                                                </div>
-										</div><!-- .single-accordian -->
+										
 									</div>
 								</div><!-- .tm-faq -->
 							</div>
@@ -1692,7 +1762,7 @@
                                 <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
                                     <a href="index.html" class="f-logo"><img src="assets/img/logo/logo.png" alt=""></a>
                                     <div class="footer-content">
-                                        <p>Cryptocash stands firmly in support of financial freedom and the liberty that Bitcoin provides globally for anyone to voluntarily participate in a permissionless and decentralized network.</p>
+                                        <p>Come join us on our thrilling journey to create a world where travel is accessible, transparent, and utterly exhilarating. Together, we'll shake up the industry and empower everyone to explore the world. With Roamino, the world is your playground.</p>
                                         <ul class="footer-social">
                                
                                             <li><a href="https://www.instagram.com/roaminocom/"><i class="fab fa-instagram"></i></a></li>
