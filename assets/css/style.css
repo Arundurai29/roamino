@@ -1589,7 +1589,7 @@ label {
     border-radius: 40px;
 }
 .romino-img{
-	transform: skew(-5deg);
+	transform: skew(5deg);
     margin: 24px 0px 0px -40px;
 }
 .chart-bg {
@@ -2086,7 +2086,7 @@ label {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-    background-position-y: 80px;
+    background-position-y: 220px;
 }
 .document-content .document-list {
 	margin-bottom: 40px;
@@ -3962,4 +3962,28 @@ label {
 }
 .re-item{
 	padding: 40px 30px !important;
+}
+.countli::before{
+    content: ":";
+    position: absolute;
+    right: 0;
+    font-size: 28px;
+    top: 23px;
+
+}
+.countli{
+
+	position: relative;
+	
+}
+.roam-macap{
+	height: 600px !important;
+    max-width: 590px !important;
+    margin-top: 30px;
+    position: absolute;
+    top: -111px;
+    left: -179px;
+}
+.pb-130 {
+    padding-bottom: 80px !important;
 }
