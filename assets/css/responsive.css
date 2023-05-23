@@ -1313,14 +1313,14 @@
 
 @media only screen and (max-width: 767px) {
   .count {
-    padding: 20px 0px !important;
+    padding: 20px 58px !important;
   }
   .countli::before {
     content: ":";
     position: absolute;
     right: -5px;
     font-size: 28px;
-    top: 10px;
+    top: 20px;
   }
   .banner-content {
     padding-bottom: 25px;
@@ -1457,6 +1457,7 @@
   }
   .token-dist {
     text-align: center;
+    font-size: 28px;
   }
   .lihide1 {
     display: none !important;
@@ -1478,5 +1479,8 @@
   }
   .partner-wrap ul li img {
     padding: 50px;
+  }
+  .count li span {
+    font-size: 2rem !important;
   }
 }
