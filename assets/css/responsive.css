@@ -1483,4 +1483,13 @@
   .count li span {
     font-size: 2rem !important;
   }
+	
+element.style {
+}
+.footer-content .footer-social {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 -7px;
+}
 }
