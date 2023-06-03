@@ -1313,14 +1313,192 @@
 
 @media only screen and (max-width: 767px) {
   .count {
-    padding: 20px 58px !important;
+    padding: 20px 95px !important;
   }
   .countli::before {
     content: ":";
     position: absolute;
     right: -5px;
     font-size: 28px;
-    top: 20px;
+    top: 0px;
+  }
+  .banner-content {
+    padding-bottom: 25px;
+  }
+  .pt-100 {
+    padding-top: 50px !important;
+  }
+  .circle_bg1 {
+    inset: -27.7rem 0rem 0rem 0 !important;
+    max-height: 55% !important;
+    width: 100% !important;
+  }
+  .content-holder {
+    position: relative;
+    top: -40px;
+  }
+  .content-holder1 {
+    position: relative;
+    top: -40px;
+    right: 0;
+  }
+  .content {
+    margin: 35px auto !important;
+  }
+
+  .webworld img {
+    max-height: 80%;
+    max-width: 90% !important;
+    margin: auto;
+  }
+  .webworld {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  .circle_bg1 {
+    inset: -22rem 0rem 0rem 0;
+    max-height: 55%;
+    width: 80%;
+  }
+  .content-inner {
+    margin-left: 65px;
+  }
+  .chart-bg {
+    padding: 40px 0;
+  }
+  .pb-130 {
+    padding-bottom: 40px;
+  }
+  .pt-60 {
+    padding-top: 0px;
+  }
+  .section-title {
+    text-align: center;
+  }
+  .document-content p {
+    text-align: justify;
+  }
+  .document-content a {
+    margin: 10px 0px;
+  }
+  .pt-130 {
+    padding-top: 40px;
+  }
+  .chart-content-inner {
+    backdrop-filter: none;
+    transform: none;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .roam-macap {
+    height: 100% !important;
+    max-width: 100% !important;
+    position: relative;
+    margin-top: 0px;
+  }
+  .romino-img {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    position: relative;
+    margin: 0;
+  }
+  .roam-macap {
+    top: 0;
+    left: 0;
+  }
+  .romino-inner {
+    transform: none;
+    margin-bottom: 30px;
+  }
+  .chart-content {
+    margin-top: 0px;
+  }
+  .chart-content .nav-pills {
+    margin: auto;
+    justify-content: center;
+    transform: translateY(30%);
+    border-radius: 30px 30px 0px 0px;
+    position: relative;
+    padding: 10px 0px;
+    z-index: 2;
+    background: #0080a457;
+    width: 100%;
+    color: #ffff;
+    top: -56px;
+  }
+  .nav-pills .nav-link {
+    width: 100%;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: #0f4a95;
+    border-radius: 30px;
+    background-color: transparent;
+  }
+  .token-details {
+    justify-content: space-between;
+  }
+  .tm-token-distribution-list {
+    margin: 0 !important;
+  }
+  .tm-sp-token-distribution {
+    padding: 0px 20px;
+    margin-top: 40px;
+  }
+
+  .tm-token-distribution-left {
+    padding-right: 0px;
+  }
+  .token-dist {
+    text-align: center;
+    font-size: 28px;
+  }
+  .lihide1 {
+    display: none !important;
+  }
+  .lihide3 {
+    display: none !important;
+  }
+  .lihide2 {
+    display: flex !important;
+  }
+  .lihide4 {
+    display: flex !important;
+  }
+  .pb-130 {
+    padding-bottom: 40px !important;
+  }
+  .pt-80 {
+    padding-top: 40px;
+  }
+  .partner-wrap ul li img {
+    padding: 50px;
+  }
+  .count li span {
+    font-size: 2rem !important;
+  }
+  .rever {
+    top: 30px;
+    position: relative;
+  }
+  .choose-area {
+    margin-top: 40px;
+  }
+  .banner-bg {
+    background-position-y: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .count {
+    padding: 20px 95px !important;
+  }
+  .countli::before {
+    content: ":";
+    position: absolute;
+    right: -5px;
+    font-size: 28px;
+    top: 0px;
   }
   .banner-content {
     padding-bottom: 25px;
@@ -1483,13 +1661,14 @@
   .count li span {
     font-size: 2rem !important;
   }
-	
-element.style {
-}
-.footer-content .footer-social {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    margin: 0 -7px;
-}
+  .rever {
+    top: 30px;
+    position: relative;
+  }
+  .choose-area {
+    margin-top: 40px;
+  }
+  .banner-bg {
+    background-position-y: 20px;
+  }
 }
