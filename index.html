@@ -168,9 +168,9 @@
         <style>
             .count li {
                 display: inline-block;
-                font-size: 1em;
+                font-size: 0.6rem;
                 list-style-type: none;
-                padding: 1em;
+                padding: 0em 0rem;
                 text-transform: uppercase;
                 text-align: center;
             }
@@ -195,7 +195,7 @@
                 letter-spacing: .5px;
                 line-height: 1;
                 margin-bottom: 0;
-                padding: 25px 50px;
+                padding: 25px 36px;
                 text-align: center;
                 text-transform: uppercase;
                 touch-action: manipulation;
@@ -209,7 +209,10 @@
 
             .count li span {
                 display: block;
-                font-size: 3.2rem;
+                font-size: 4.2rem;
+                padding: 0px 17px;
+                color: #36a6ca;
+                font-family: 'clock';
             }
 
             .emoji {
@@ -285,7 +288,7 @@
             </div>
         </section>
         <!-- about-area -->
-        <section id="about" class="about-area pt-100 pb-130">
+        <section id="about" class="about-area pt-100 pb-4">
 
             <div class="container">
                 <div class="row align-items-center">
@@ -370,7 +373,7 @@
                                     </ul>
                                 </div>
                             </div> -->
-                        <div class="col-lg-12 ">
+                        <div class="col-lg-12 rever">
                             <div class="chart-content wow fadeInLeft" data-wow-delay=".2s">
                                 <!-- <ul class="nav nav-tabs" id="myTab" role="tablist">
                                         <li class="nav-item " role="presentation">
@@ -401,11 +404,11 @@
                                             data-bs-target="#token" type="button" role="tab" aria-controls="token"
                                             aria-selected="false">LOCATIONS NFTS / GEO NFTS</button>
                                     </li>
-                                    <li class="nav-item">
+                                    <!-- <li class="nav-item">
                                         <button class="nav-link" id="token-tab" data-bs-toggle="tab"
                                             data-bs-target="#token1" type="button" role="tab" aria-controls="token1"
                                             aria-selected="false">METAVERSE TRAVEL</button>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-item">
                                         <button class="nav-link" id="token-tab" data-bs-toggle="tab"
                                             data-bs-target="#token2" type="button" role="tab" aria-controls="token2"
@@ -418,13 +421,13 @@
                                         <div class="chart-content-inner">
                                             <div class="container">
                                                 <div class="row">
-                                                    <div class="col-lg-5 col-md-12">
+                                                    <div class="col-lg-4 col-md-12">
                                                         <div class="romino-img">
                                                             <img class="roam-macap"
-                                                                src="assets/img/banner/Finaldashboard.png" alt="">
+                                                                src="assets/img/images/Roamino mockup.png" alt="">
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-7 col-md-12 ">
+                                                    <div class="col-lg-8 col-md-12 ">
                                                         <div class="romino-inner">
                                                             <h2 class="title">Roamino platformv1</h2>
                                                             <p>Roamino's love for travel and technology has made
@@ -526,7 +529,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="tab-pane fade" id="token1" role="tabpanel" aria-labelledby="token-tab">
+                                    <!-- <div class="tab-pane fade" id="token1" role="tabpanel" aria-labelledby="token-tab">
                                         <div class="chart-content-inner">
                                             <div class="container">
                                                 <div class="row">
@@ -584,7 +587,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="tab-pane fade" id="token2" role="tabpanel" aria-labelledby="token-tab">
                                         <div class="chart-content-inner">
                                             <div class="container">
@@ -796,42 +799,52 @@
         <!-- area-bg -->
         <div class="area-bg mt-5" id="tokan">
             <div class="container pb-130">
+                <div class="section-title text-center mb-50">
+                    <span class="sub-title">Token</span>
+                    <h2 class="title">ROAM<span> Tokenomics</span></h2>
+                </div>
                 <div class="row">
                     <div class="col-xl-12">
-                        <div class="section-title text-center mb-50">
-                            <span class="sub-title">Token</span>
-                            <h2 class="title">ROAM<span> Tokenomics</span></h2>
-                        </div>
-                        <div class="tm-token-distribution col-xs-b1" style="    justify-content: space-between;">
-                            <div class="tm-token-distribution-left">
-                                <h2 class="token-detals">ROAM Token Details</h2>
-                                <div class="token-details" style="display: flex;">
-                                    <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
-                                        <li><span class="tm-percentage tm-light-blue-c">TOKEN NAME</span></li>
-                                        <li><span class="tm-percentage tm-light-blue-c">TOKEN SYMBOL</span></li>
-                                        <li><span class="tm-percentage tm-light-blue-c">TOKEN TYPE</span></li>
-                                        <li><span class="tm-percentage tm-light-blue-c"> DECIMAL SUPPORT</span></li>
-                                        <li><span class="tm-percentage tm-light-blue-c">TOTAL TOKEN SUPPLY</span></li>
-                                    </ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="tm-token-distribution-left">
+                                    <h2 class="token-detals">ROAM Token Details</h2>
                                     <div class="token-details" style="display: flex;">
+                                        <ul class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                                            <li><span class="tm-percentage tm-light-blue-c">TOKEN NAME</span></li>
+                                            <li><span class="tm-percentage tm-light-blue-c">TOKEN SYMBOL</span></li>
+                                            <li><span class="tm-percentage tm-light-blue-c">TOKEN TYPE</span></li>
+                                            <li><span class="tm-percentage tm-light-blue-c"> DECIMAL SUPPORT</span></li>
+                                            <li><span class="tm-percentage tm-light-blue-c">TOTAL TOKEN SUPPLY</span>
+                                            </li>
                                         </ul>
-                                        <ul style="margin-left: 57px;"
-                                            class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
-                                            <li>ROAMINO</li>
-                                            <li>ROAM</li>
-                                            <li>ERC-20</li>
-                                            <li>14</li>
-                                            <li> 1,000,000,000</li>
+                                        <div class="token-details" style="display: flex;">
+                                            </ul>
+                                            <ul style="margin-left: 57px;"
+                                                class="tm-token-distribution-list tm-f20 tm-md-f15 tm-white-c">
+                                                <li>ROAMINO</li>
+                                                <li>ROAM</li>
+                                                <li>ERC-20</li>
+                                                <li>14</li>
+                                                <li> 1,000,000,000</li>
 
-                                        </ul>
+                                            </ul>
 
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="tm-token-distribution-right tm-sp-token-distribution">
-                                <img src="assets/img/images/pre_age2.png" width="350px" alt=""
-                                    class="tm-token-distribution-img">
+                            <div class="col-md-6">
+                                <div class="tm-token-distribution-right tm-sp-token-distribution">
+                                    <img src="assets/img/images/pre_age2.png" width="350px" alt=""
+                                        class="tm-token-distribution-img">
+                                </div>
                             </div>
+                        </div>
+
+                        <div class="tm-token-distribution col-xs-b1">
+
+
 
                         </div>
                         <div class="tm-token-distribution col-xs-b1" style="      justify-content: space-between;">
@@ -907,13 +920,13 @@
                                     </div>
                                     <div class="choose1">
                                         <a href="#" class="btn"
-                                            style="padding:15px; margin-top: 30px;border: 2px solid #1b405fc4;">Regsiter
+                                            style="padding:15px; margin-top: 30px;border: 2px solid #1b405fc4;">Register
                                             Now</a>
 
                                     </div>
                                 </div>
                                 <div class="choose-foot">
-                                    <p style="margin-top: 15px;">1 Week only</p>
+                                    <p style="margin-top: 15px;">Soon..</p>
                                     <p>Start In <br> -----</p>
                                 </div>
 
@@ -928,7 +941,7 @@
                                     <h5>BONUS</h5>
                                 </div>
                                 <div class="choose-foot">
-                                    <p style="margin-top: 15px;">2 week only</p>
+                                    <p style="margin-top: 15px;">Soon..</p>
                                     <p>Start In <br>-----</p>
                                 </div>
 
@@ -943,7 +956,7 @@
                                     <h5>BONUS</h5>
                                 </div>
                                 <div class="choose-foot">
-                                    <p style="margin-top: 15px;">1 Month only</p>
+                                    <p style="margin-top: 15px;">Soon..</p>
                                     <p>Start In <br>----- </p>
                                 </div>
 
@@ -1279,48 +1292,48 @@
                             </div>
                             <div>
                                 <div class="tm-roadmap-text tm-lh27">
-                                    <h3 class="tm-f20 tm-md-f15 tm-mb">7 Blockchain reputational module implementation.
+                                    <h3 class="tm-f20 tm-md-f15 tm-mb">Coming Soon
                                     </h3>
                                     <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                    <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
+                                    <!-- <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
                                         throughout
                                         the platform. We are already started on the way to goal.</div>
+                                </div> -->
                                 </div>
-                            </div>
-                            <div>
-                                <div class="tm-roadmap-text tm-lh27">
-                                    <h3 class="tm-f20 tm-md-f15 tm-mb">8 Blockchain reputational module implementation.
-                                    </h3>
-                                    <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                    <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
+                                <div>
+                                    <div class="tm-roadmap-text tm-lh27">
+                                        <h3 class="tm-f20 tm-md-f15 tm-mb">Coming Soon
+                                        </h3>
+                                        <div class="empty-space col-md-b20 col-xs-b20"></div>
+                                        <!-- <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
                                         throughout
-                                        the platform. We are already started on the way to goal.</div>
+                                        the platform. We are already started on the way to goal.</div> -->
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="tm-roadmap-text tm-lh27">
-                                    <h3 class="tm-f20 tm-md-f15 tm-mb">9 Blockchain reputational module implementation.
-                                    </h3>
-                                    <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                    <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
+                                <div>
+                                    <div class="tm-roadmap-text tm-lh27">
+                                        <h3 class="tm-f20 tm-md-f15 tm-mb">Coming Soon
+                                        </h3>
+                                        <div class="empty-space col-md-b20 col-xs-b20"></div>
+                                        <!-- <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
                                         throughout
-                                        the platform. We are already started on the way to goal.</div>
+                                        the platform. We are already started on the way to goal.</div> -->
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="tm-roadmap-text tm-lh27">
-                                    <h3 class="tm-f20 tm-md-f15 tm-mb">10 Blockchain reputational module implementation.
-                                    </h3>
-                                    <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                    <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
+                                <div>
+                                    <div class="tm-roadmap-text tm-lh27">
+                                        <h3 class="tm-f20 tm-md-f15 tm-mb">Coming Soon
+                                        </h3>
+                                        <div class="empty-space col-md-b20 col-xs-b20"></div>
+                                        <!-- <div class="tm-f20 tm-md-f15">Integrateblockchain and smart contracts technology
                                         throughout
                                         the platform. We are already started on the way to goal.</div>
+                                </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <!-- <div class="empty-space space1 col-md-b80 col-xs-b45"></div> -->
+                        <!-- <div class="empty-space space1 col-md-b80 col-xs-b45"></div> -->
             </section>
             <style>
                 .slider.slider-nav .slick-list.draggable>.slick-track {
@@ -2008,7 +2021,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-3 col-sm-6">
+                        <div class="col-xl-3 col-lg-5 col-sm-6">
                             <div class="footer-widget  wow fadeInUp" data-wow-delay=".4s">
                                 <h4 class="fw-title">Useful Links</h4>
                                 <div class="footer-link">
@@ -2024,7 +2037,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-lg-2 col-sm-6">
+                        <div class="col-xl-2 col-lg-3 col-sm-6">
                             <div class="footer-widget wow fadeInUp" data-wow-delay=".6s">
                                 <h4 class="fw-title">Community</h4>
                                 <div class="footer-link">
