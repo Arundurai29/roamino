@@ -46,6 +46,10 @@ body {
 body.white-background {
   background-color: #ffffff;
 }
+@font-face {
+  font-family: "clock";
+  src: url(../fonts/digital-7.ttf);
+}
 img,
 .img {
   max-width: 100%;
@@ -1588,7 +1592,6 @@ label {
 }
 .chart-content-inner {
   background: linear-gradient(360deg, #0b1d33 100%, rgba(11, 29, 51, 0) 56.51%);
-  backdrop-filter: blur(3.5px);
   transform: skew(-5deg);
   margin: 0px 60px;
   padding: 50px;
@@ -4030,33 +4033,40 @@ label {
 .countli::before {
   content: ":";
   position: absolute;
-  right: 0;
+  right: -6px;
   font-size: 28px;
-  top: 23px;
+  top: 21px;
 }
 .countli {
   position: relative;
 }
 .roam-macap {
-/*   height: 600px !important;
+  /*   height: 600px !important;
   max-width: 590px !important;
   margin-top: 30px;
   position: absolute;
   top: -111px;
   left: -179px; */
-    height: 44rem !important;
-    max-width: 208%!important;
-    margin-top: 30px;
-    position: absolute;
-    top: -150px;
-    left: -208px;
+  height: 44rem !important;
+  max-width: 219% !important;
+  margin-top: 30px;
+  position: absolute;
+  top: -193px;
+  left: -208px;
 }
 .pb-130 {
-  padding-bottom: 80px !important;
+  padding-bottom: 40px !important;
 }
 .lihide2 {
   display: none !important;
 }
 .lihide4 {
   display: none !important;
+}
+.rever {
+  top: -80px;
+  position: relative;
+}
+.tm-token-distribution-left {
+  padding-right: 100px;
 }
