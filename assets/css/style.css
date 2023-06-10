@@ -1530,7 +1530,7 @@ label {
   border: 0;
 }
 .choose-area .slide-progress {
-  display: block;
+  display: none;
   width: 100%;
   height: 3px;
   border-radius: 0;
@@ -1589,6 +1589,7 @@ label {
 /* 9. Chart */
 .chart-inner {
   padding: 0 110px;
+  margin-top: -70px;
 }
 .chart-content-inner {
   background: linear-gradient(360deg, #0b1d33 100%, rgba(11, 29, 51, 0) 56.51%);
@@ -1605,7 +1606,7 @@ label {
   background-image: url(../img/bg/chart_bg.jpg);
   background-size: cover;
   background-position: center;
-  padding: 130px 0;
+  padding: 80px 0;
 }
 .chart-content .nav-tabs {
   border-bottom: none;
@@ -2835,9 +2836,9 @@ label {
 }
 
 /* 18. Contact */
-.contact-info-wrap {
+/* .contact-info-wrap {
   margin-bottom: 50px;
-}
+} */
 .contact-info-item {
   text-align: center;
   position: relative;
@@ -3645,6 +3646,7 @@ label {
 }
 .romino-inner {
   transform: skew(4deg);
+  padding: 0px 50px;
 }
 .romino-inner p {
   margin-bottom: 10px !important;
@@ -3987,12 +3989,12 @@ label {
   margin-top: 20px;
 }
 .token-detals {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 30px;
 }
 .token-dist {
-  font-size: 32px;
-  margin: 50px 0px 30px 0px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 .dot::before {
   content: "";
@@ -4047,15 +4049,15 @@ label {
   position: absolute;
   top: -111px;
   left: -179px; */
-  height: 44rem !important;
-  max-width: 219% !important;
+  height: 36rem !important;
+  max-width: 203% !important;
   margin-top: 30px;
   position: absolute;
-  top: -193px;
-  left: -208px;
+  top: -101px;
+  left: -224px;
 }
 .pb-130 {
-  padding-bottom: 40px !important;
+  padding-bottom: 80px !important;
 }
 .lihide2 {
   display: none !important;
@@ -4067,6 +4069,11 @@ label {
   top: -80px;
   position: relative;
 }
-.tm-token-distribution-left {
-  padding-right: 100px;
+.tab-links {
+  display: none !important;
+}
+.droam-sale {
+  color: #fff;
+  text-align: center;
+  margin: 30px 0px 0px 0px;
 }
