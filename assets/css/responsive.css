@@ -855,6 +855,7 @@
     margin-bottom: 40px;
     padding: 15px 9px;
     color: #a4b4c3;
+    text-align: justify;
   }
   .chart-content-inner {
     display: grid;
@@ -866,7 +867,7 @@
     top: 0;
   }
   .banner-bg {
-    padding: 75px 0 0;
+    padding: 40px 0 0;
   }
   .banner-content .title {
     font-size: 30px;
@@ -1312,9 +1313,9 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .count {
+  /* .count {
     padding: 20px 95px !important;
-  }
+  } */
   .countli::before {
     content: ":";
     position: absolute;
@@ -1361,7 +1362,7 @@
     width: 80%;
   }
   .content-inner {
-    margin-left: 65px;
+    margin: 0px 31px;
   }
   .chart-bg {
     padding: 40px 0;
@@ -1390,9 +1391,17 @@
     border-radius: 0px 0px 30px 30px;
   }
   .roam-macap {
-    height: 100% !important;
+    height: 263px !important;
     max-width: 100% !important;
     position: relative;
+    margin-top: 0px;
+  }
+  .romino-img img {
+    height: 263px;
+    max-width: 100%;
+    margin: 15px 0px;
+  }
+  .chart-inner {
     margin-top: 0px;
   }
   .romino-img {
@@ -1409,6 +1418,7 @@
   .romino-inner {
     transform: none;
     margin-bottom: 30px;
+    padding: 0px 10px;
   }
   .chart-content {
     margin-top: 0px;
@@ -1431,9 +1441,9 @@
   }
   .nav-pills .nav-link.active,
   .nav-pills .show > .nav-link {
-    color: #0f4a95;
+    color: #fcfdff;
     border-radius: 30px;
-    background-color: transparent;
+    background-color: #0b1d33;
   }
   .token-details {
     justify-content: space-between;
@@ -1443,7 +1453,7 @@
   }
   .tm-sp-token-distribution {
     padding: 0px 20px;
-    margin-top: 40px;
+    margin: 40px;
   }
 
   .tm-token-distribution-left {
@@ -1472,7 +1482,7 @@
     padding-top: 40px;
   }
   .partner-wrap ul li img {
-    padding: 50px;
+    padding: 80px;
   }
   .count li span {
     font-size: 2rem !important;
@@ -1482,7 +1492,10 @@
     position: relative;
   }
   .choose-area {
-    margin-top: 40px;
+    margin-top: 80px;
+  }
+  .choose-area1 {
+    margin-top: 0px !important;
   }
   .banner-bg {
     background-position-y: 20px;
@@ -1670,5 +1683,11 @@
   }
   .banner-bg {
     background-position-y: 20px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .banner-bg {
+    background-position-y: -20px;
   }
 }
