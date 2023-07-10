@@ -167,8 +167,9 @@
 .mb-75 {
   margin-bottom: 75px;
 }
-.mb-80 {
-  margin-bottom: 80px;
+
+.mb-0 {
+  margin-bottom: 0px;
 }
 .mb-85 {
   margin-bottom: 85px;
@@ -320,7 +321,7 @@
   padding-top: 125px;
 }
 .pt-130 {
-  padding-top: 80px;
+  padding-top: 60px;
 }
 .pt-135 {
   padding-top: 135px;
@@ -718,4 +719,9 @@
 }
 [data-overlay="9"]::before {
   opacity: 0.9;
+}
+@media (min-width: 700px) {
+  .mb-md-80 {
+    margin-bottom: 80px !important;
+  }
 }
