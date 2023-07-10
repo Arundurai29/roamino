@@ -137,7 +137,9 @@
                                 <img class="image" src="assets/img/images/Logo 3.svg" alt="">
                             </div>
                             <div style="margin-right: 23px;">
-                                <a style="margin: 10px 10px;" class="btn" href="#">READ WHITEPAPER</a>
+                                <a style="margin: 10px 10px;" class="btn"
+                                    href="https://drive.google.com/file/d/1e6qv_kfBAp5HPPfBZz0A5-bKtSeejD7K/view?usp=sharing">READ
+                                    WHITEPAPER</a>
                                 <a style="margin: 10px 10px;" class="btn" href="">REGISTER FOR ICO</a>
                             </div>
                         </div>
@@ -225,7 +227,7 @@
                 padding: 0 .5rem;
             }
         </style>
-        <!-- <script>
+        <script>
             (function () {
                 const second = 1000,
                     minute = second * 60,
@@ -239,7 +241,7 @@
                     mm = String(today.getMonth() + 1).padStart(2, "0"),
                     yyyy = today.getFullYear(),
                     nextYear = yyyy + 1,
-                    dayMonth = "01/01/",
+                    dayMonth = "08/15/",
                     birthday = dayMonth + yyyy;
 
                 today = mm + "/" + dd + "/" + yyyy;
@@ -269,15 +271,15 @@
                         //seconds
                     }, 0)
             }());
-        </script> -->
+        </script>
         <section id="about" class="about-area pt-2 pt-md-5">
             <div class="container">
                 <div id="countdown">
                     <ul class="count">
-                        <li class="countli"><span id="days">00</span>days</li>
-                        <li class="countli"><span id="hours">00</span>Hours</li>
-                        <li class="countli"><span id="minutes">00</span>Minutes</li>
-                        <li><span id="seconds">00</span>Seconds</li>
+                        <li class="countli"><span id="days"></span>days</li>
+                        <li class="countli"><span id="hours"></span>Hours</li>
+                        <li class="countli"><span id="minutes"></span>Minutes</li>
+                        <li><span id="seconds"></span>Seconds</li>
                     </ul>
                 </div>
                 <div id="content" class="emoji">
@@ -344,13 +346,13 @@
                         <div class="content-holder1">
                             <ul class="content-inner">
                                 <li class="content-inner5"> <img src="assets/img/images/mark.png" alt="">No hefty
-                                    Commissions </li>
+                                    Commissions <img class="hide2" src="assets/img/images/mark.png" alt=""></li>
                                 <li class="content-inner6"><img src="assets/img/images/mark.png" alt="">Flexible Payment
-                                    Solutions </li>
+                                    Solutions <img class="hide2" src="assets/img/images/mark.png" alt=""></li>
                                 <li class="content-inner7"> <img src="assets/img/images/mark.png" alt="">All-in-one
-                                    Travel platform</li>
+                                    Travel platform <img class="hide2" src="assets/img/images/mark.png" alt=""></li>
                                 <li class="content-inner8"> <img src="assets/img/images/mark.png" alt="">Tokenized
-                                    Rewards</li>
+                                    Rewards <img class="hide2" src="assets/img/images/mark.png" alt=""></li>
                             </ul>
                         </div>
                     </div>
@@ -373,7 +375,7 @@
                                     </ul>
                                 </div>
                             </div> -->
-                        <div class="section-title text-center mb-80">
+                        <div class="section-title text-center mb-md-80 mb-0">
                             <span class="sub-title">Eco System</span>
                             <!-- <h2 class="title">Roam Token <span>Use Cases</span></h2> -->
                         </div>
@@ -903,7 +905,7 @@
             </div>
 
             <!-- choose-area -->
-            <section class="choose-area  pb-130" id="">
+            <section class="choose-area choose-area1  pb-130" id="">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-xl-6">
@@ -961,9 +963,9 @@
                             </div>
                         </div>
                     </div>
-                    <p class="droam-sale">20% of the token is reserved for DeRoam <br>
-
-                        14 % is dedicated to the Team <br>
+                    <p class="droam-sale"> <span class="sale-inner-color">20%</span> of the token is reserved for DeRoam
+                        ||
+                        <span class="sale-inner-color"> 14 %</span> is dedicated to the Team <br>
 
                         ( Team Tokens will be locked-in and released on Quarterly basis)
                     </p>
@@ -973,6 +975,10 @@
 
             <!-- chart-area -->
             <style>
+                .sale-inner-color {
+                    color: #00c4f4;
+                }
+
                 .ima-ban {
                     position: relative;
 
@@ -1253,9 +1259,9 @@
                                     <h3 class="tm-f20 tm-md-f15 tm-mb">Ico launch
                                     </h3>
                                     <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                    <div class="tm-f20 tm-md-f15"> UI design & Roamino V1 <br>
+                                    <div class="tm-f20 tm-md-f15"> UI design & Roamino <br>
                                         <div class="empty-space col-md-b20 col-xs-b20"></div>
-                                        development <br>
+                                        V1 development <br>
                                         <div class="empty-space col-md-b20 col-xs-b20"></div>
                                         Community building
                                     </div>
@@ -1341,6 +1347,35 @@
             <style>
                 .slider.slider-nav .slick-list.draggable>.slick-track {
                     padding: 47px 0 136px;
+                }
+
+                @media(max-width:700px) {
+                    .slider.slider-nav .slick-list.draggable>.slick-track {
+                        padding: 47px 0 80px;
+                    }
+
+                    .partner-area {
+                        padding-top: 0px !important;
+                    }
+
+                    .hide2 {
+                        display: grid !important;
+                    }
+
+                    .content-inner li {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    .romino-inner p {
+                        color: #ffff !important;
+                        text-align: justify;
+                    }
+
+                    .droam-sale {
+                        padding: 0px 25px;
+                    }
                 }
 
                 .tm-roadmap-text {
@@ -1539,14 +1574,13 @@
             </div>
         </div>
         <!-- partner-area-end -->
-        <section class="tm-faq-wrap tm-bg" id="faq" style="background-image: url(assets/img/bg/faq.png); background-position: center; background-attachment: fixed;
+        <section class="tm-faq-wrap tm-bg container-fluid" id="faq" style="background-image: url(assets/img/bg/faq.png); background-position: center; background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;">
             <div class="empty-space col-md-b55 col-xs-b35"></div>
             <div class="section-title mb-35 text-center" style="position: relative;">
                 <h2 class="title">Frequently Asked <span>Questions</span></h2>
             </div>
-            <div class="empty-space col-md-b55 col-xs-b35"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -2024,13 +2058,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-5 col-sm-6">
+                        <div class="col-xl-3 col-lg-5 col-sm-6 col-6">
                             <div class="footer-widget  wow fadeInUp" data-wow-delay=".4s">
                                 <h4 class="fw-title">Useful Links</h4>
                                 <div class="footer-link">
 
                                     <ul class="navigation">
-                                        <li><a href="https://drive.google.com/file/d/1g9X6EjjCoWNLr-5pAeg4wz85Hx5_uiAs/view"
+                                        <li><a href="https://drive.google.com/file/d/1e6qv_kfBAp5HPPfBZz0A5-bKtSeejD7K/view?usp=sharing"
                                                 class="section-link">Whitepaper</a></li>
                                         <li><a href="#about" class="section-link">Ecosystem</a></li>
                                         <li><a href="#roadmap" class="section-link">Roadmap</a></li>
@@ -2040,7 +2074,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-3 col-sm-6">
+                        <div class="col-xl-2 col-lg-3 col-sm-6 col-6">
                             <div class="footer-widget wow fadeInUp" data-wow-delay=".6s">
                                 <h4 class="fw-title">Community</h4>
                                 <div class="footer-link">
