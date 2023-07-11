@@ -855,7 +855,6 @@
     margin-bottom: 40px;
     padding: 15px 9px;
     color: #a4b4c3;
-    text-align: justify;
   }
   .chart-content-inner {
     display: grid;
@@ -1688,6 +1687,6 @@
 
 @media (max-width: 1300px) {
   .banner-bg {
-    background-position-y: -20px;
+    background-position-y: 34px;
   }
 }
